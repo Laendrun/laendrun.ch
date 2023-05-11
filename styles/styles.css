@@ -4,24 +4,27 @@ html {
 
 body {
 	margin: 0;
-	padding: 0;
+	padding: 1rem;
 	font-family: "IBM Plex Mono"
 }
 
+.border {
+	border: 2px solid gray;
+	border-radius: 10px;
+}
+
 .container {
-	/* display:grid; */
 	display: flex;
 	justify-items: center;
+	align-items: center;
 	flex-direction: column;
 	min-height: 100vh;
-	/* grid-template-columns: 1fr; */
 }
 
 .section {
 	flex: 1;
 	min-height: 100vh;
 	width: 100%;
-	/* border: 1px dotted black; */
 }
 
 .center-text {
@@ -44,18 +47,6 @@ body {
 	padding-right: 1rem;
 }
 
-.text-center {
-	text-align: center;
-}
-
-.rem-3 {
-	font-size: 3rem;
-}
-
-.mt-3 {
-	margin-top: 3rem;
-}
-
 .about-content {
 	text-align: center;
 	min-height: 80vh;
@@ -67,19 +58,18 @@ body {
 }
 
 .contact-content {
-	text-align: center;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	flex-direction: column;
 	min-height: 80vh;
-}
-
-#babybossImg {
-	width: 50vw;
 }
 
 a {
 	all: unset;
 }
 
-a {
+a.link {
 	&[href^="http"] {
 		&:before {
 		content: "\2197\0020";
@@ -94,8 +84,21 @@ a {
 
 .link:hover {
 	cursor: pointer;
+	opacity: 50%;
 }
 
 .arrow-container:hover {
 	cursor: pointer;
+}
+
+.center {
+	text-align: center;
+}
+
+.rem-3 {
+	font-size: 3rem;
+}
+
+.mt-3 {
+	margin-top: 3rem;
 }

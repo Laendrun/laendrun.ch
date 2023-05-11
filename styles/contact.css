@@ -1,0 +1,37 @@
+.contact-card {
+	min-height: max-content;
+	width: 80%;
+}
+
+.contact-type {
+	height: 3rem;
+	margin-top: 3rem;
+}
+
+.contact-text {
+	margin-left: 1rem;
+}
+
+.contact-text > a {
+	&[href^="http"] {
+		&:before {
+		content: "";
+		white-space: nowrap;
+		}
+	}
+}
+
+/* medium screen card */
+@media screen and (min-width: 768px) {
+	.contact-card {
+		width: 50%;
+	}
+}
+
+/* big screen card */
+
+@media screen and (min-width: 992px) {
+	.contact-card {
+		width: 40%;
+	}
+}
