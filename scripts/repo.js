@@ -9,7 +9,7 @@ if (!(localStorage.colors))
 
 const getColor = (language) => {
 	let colors = JSON.parse(localStorage.getItem('colors'));
-	return (language ? colors[language].color : 'lightgray');
+	return (language ? colors[language].color : 'white');
 }
 
 const createCards = () => {

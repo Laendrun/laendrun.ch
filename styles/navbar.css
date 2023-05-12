@@ -1,0 +1,48 @@
+.nav-container {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	height: 18rem;
+	width: 3rem;
+	right: 0.1rem;
+	top: calc(50% - 9rem);
+}
+
+@media screen and (min-width: 768px) {
+	.nav-container {
+		right: 2rem;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.nav-container {
+		right: 4rem;
+	}
+}
+
+.nav-container > .nav-link {
+	flex: 1;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 50%;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.nav-link:first-child {
+	border-top: unset;
+}
+
+.nav-link:last-child {
+	border-bottom: unset;
+}
+
+.nav-link:hover {
+	cursor: pointer;
+}
+
+.nav-icon > svg {
+	width: 50%;
+	fill: black;
+	opacity: 50%;
+}

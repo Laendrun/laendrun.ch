@@ -25,6 +25,9 @@ svg {
 
 .repo-title {
 	margin-left: 2rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .repo-description {
